@@ -4,5 +4,5 @@ if year % 4 == 0:
 else:
     print('Год невисокосный')
 
-vek = year % 100 + 1
+vek = year // 100 + 1
 print('Век', vek)

@@ -1,0 +1,21 @@
+l1 = []
+
+while True:
+    number = int(input('Введите число'))
+    if number == -5:
+        break
+    l1.append(number)
+
+countP = 0
+countO = 0
+
+for i in l1:
+    if i < 0:
+        countO += 1
+    elif i > 0:
+        countP += 1
+
+perP = ((countP / len(l1)) * 100)
+perO = ((countO / len(l1)) * 100)
+
+print(perO, perP)
